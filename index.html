@@ -19,115 +19,165 @@
 </head>
 <body>
   <h1>Privacy Policy for Granular Volume</h1>
-  <p class="muted">Last updated: 9 July 2026</p>
+  <p class="muted">Last updated: August 26, 2026</p>
 
   <p><strong>Granular Volume</strong> ("the app") is a utility developed by an independent
   developer (Rotem Zussman, "the developer", "we") that adds fine-grained, software-level
-  volume steps on top of your Android device's built-in volume controls. This policy explains,
-  in plain language, what the app does and does not do with information, what rights you have,
-  and the legal terms that apply to your use of the app.</p>
+  volume control on top of your Android device's built-in volume controls. This policy
+  explains, in plain language, what the app does and does not do with information, and what
+  rights you have. It covers the Granular Volume app on Google Play and F-Droid, and the
+  optional companion app <strong>Volume Control Full Range Key</strong> ("the Key App"),
+  which has its own short policy at the address given in the Key App section below.</p>
 
   <h2>The short version</h2>
-  <p><strong>Granular Volume does not collect, store, transmit, or share any personal data.</strong>
-  The app has <strong>no internet access</strong>, and it does not request the
-  <code>INTERNET</code> permission, contains no analytics, no advertising, and no
-  third-party tracking SDKs of any kind. Nothing ever leaves your device.</p>
+  <p><strong>Granular Volume does not collect, store, transmit, or share any personal
+  data.</strong> The app has <strong>no internet access</strong> in any version: it does not
+  request the <code>INTERNET</code> permission, contains no analytics, no advertising, and no
+  third-party tracking SDKs of any kind. Nothing ever leaves your device. This is true for the
+  free features, and it remains true after the optional full-range unlock: the purchase happens
+  on Google Play's own store listing for the Key App, not inside this app, so this app never
+  gains network access and never touches a payment.</p>
 
   <h2>Information we collect</h2>
-  <p><strong>None.</strong> We do not collect, and have no technical means of collecting, names,
-  email addresses, location, contacts, device identifiers, usage statistics, crash logs, or any
-  other personal or sensitive information. We do not use cookies, SDKs, or any other tracking
-  technology. We do not sell, rent, or share information about you, because none is ever
-  collected in the first place.</p>
+  <p><strong>None.</strong> The app's own code does not collect, and has no technical means of
+  collecting or transmitting, names, email addresses, location, contacts, device identifiers,
+  usage statistics, crash logs, payment details, or any other personal or sensitive
+  information. It has no servers and no network capability of its own. We do not use cookies,
+  analytics, advertising, or any tracking technology.</p>
 
   <h2>Information stored on your device</h2>
   <p>The app saves a small amount of <em>local settings</em> on your device only, so it can
   remember your preferences between sessions:</p>
   <ul>
     <li>The on-screen position of the floating control.</li>
-    <li>Your last selected volume-attenuation level.</li>
-    <li>Whether the control was active (used to optionally restart after reboot).</li>
+    <li>Your last selected volume level.</li>
+    <li>Whether the control was active (used to optionally restart it after a reboot).</li>
+    <li>Whether you have accepted the current Terms of Use.</li>
+    <li>Local flags related to the optional full-range unlock: whether this device qualifies
+        for the free full range as a long-time user, and which one-time informational screens
+        have already been shown.</li>
   </ul>
   <p>This data is stored privately in the app's own storage on your device, is never
-  transmitted anywhere, is never accessible to the developer or any third party, and is
-  permanently deleted when you uninstall the app.</p>
+  transmitted anywhere, and is deleted when you uninstall the app. The app disables Android's
+  cloud backup for its data (<code>allowBackup=false</code>), so these settings are not copied
+  to any backup service either.</p>
 
   <h2>Permissions and why they are needed</h2>
   <ul>
-    <li><strong>Display over other apps</strong> (<code>SYSTEM_ALERT_WINDOW</code>), to show
+    <li><strong>Display over other apps</strong> (<code>SYSTEM_ALERT_WINDOW</code>): to show
         the floating volume control on top of other apps.</li>
-    <li><strong>Modify audio settings</strong> (<code>MODIFY_AUDIO_SETTINGS</code>), to apply
-        the additional volume attenuation to audio output.</li>
+    <li><strong>Modify audio settings</strong> (<code>MODIFY_AUDIO_SETTINGS</code>): to apply
+        the volume attenuation to audio output.</li>
     <li><strong>Foreground service</strong> (<code>FOREGROUND_SERVICE</code>,
-        <code>FOREGROUND_SERVICE_SPECIAL_USE</code>), to keep the control running reliably
-        while you use other apps, with a persistent notification. The service maintains an audio effect and the overlay; it does not play media itself, which is why it is declared as a special-use foreground service rather than a media-playback one.</li>
-    <li><strong>Run at startup</strong> (<code>RECEIVE_BOOT_COMPLETED</code>), optional, to restore
-        the control after the device restarts.</li>
-    <li><strong>Notifications</strong> (<code>POST_NOTIFICATIONS</code>), to display the
+        <code>FOREGROUND_SERVICE_SPECIAL_USE</code>): to keep the control running reliably
+        while you use other apps, with a persistent notification.</li>
+    <li><strong>Run at startup</strong> (<code>RECEIVE_BOOT_COMPLETED</code>): to restore the
+        control after the device restarts, only if it was active when the device shut down.</li>
+    <li><strong>Notifications</strong> (<code>POST_NOTIFICATIONS</code>): to display the
         ongoing service notification required by Android for foreground services.</li>
   </ul>
-  <p>Every permission listed above is used exclusively for the on-device function described
-  next to it. None of these permissions is used, or is technically capable of being used, to
-  access, collect, or transmit personal information, since the app has no network access at
-  all.</p>
+  <p>The app does not request the <code>INTERNET</code> permission in any version. None of the
+  permissions above is used to access, collect, or transmit personal information.</p>
 
-  <h2>Third-party services</h2>
-  <p>The app is distributed through Google Play and/or F-Droid. Distribution and installation
-  are handled entirely by those platforms under their own respective privacy policies and
-  terms, which apply to the download and update process itself, independently of anything
-  described here. The app does not embed any other third-party service, library, or SDK that
-  collects or transmits data of any kind.</p>
+  <h2>The optional full-range unlock (the Key App)</h2>
+  <p>The Google Play version of Granular Volume offers deeper quiet steps as an optional,
+  one-time purchase. The purchase is not made inside this app. It works like this:</p>
+  <ul>
+    <li>The unlock is a separate, small companion app called <strong>Volume Control Full Range
+        Key</strong>, sold on its own Google Play listing. Buying and installing it is the
+        entire unlock.</li>
+    <li>To decide whether the full range is unlocked, Granular Volume performs a purely local
+        check, using Android's standard package manager, of whether the Key App is installed on
+        this device and was signed by the developer. This check happens entirely on your
+        device. Nothing is looked up online, and nothing is transmitted, by either app.</li>
+    <li>The payment itself is collected and processed by Google Play when you buy the Key App
+        from its store listing, exactly like buying any other paid app. Payment details (card
+        number, billing address, and similar) are handled by Google under Google's own privacy
+        policy at <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.
+        Neither Granular Volume nor the developer ever receives, sees, or stores any payment
+        information.</li>
+    <li>The purchase is one-time. There is no subscription, no recurring charge, and nothing to
+        cancel. To restore it on a new device or after a reset, install the Key App again from
+        Google Play with the same Google account; Google Play remembers the purchase.</li>
+    <li>For refunds, you can use Google Play's standard refund process, or contact the
+        developer directly at the email below.</li>
+  </ul>
+  <p>The Key App itself collects nothing, requests no permissions, and has no internet access.
+  Its own short privacy policy is published at
+  <a href="https://rzuss.github.io/granular-volume-privacy/key-privacy.html">rzuss.github.io/granular-volume-privacy/key-privacy.html</a>.</p>
+  <p>The F-Droid version of Granular Volume includes the full range at no charge, contains no
+  purchase feature of any kind, and performs no key check. It remains 100% offline,
+  permanently.</p>
+
+  <h2>Third-party services and components</h2>
+  <p>The app is distributed through Google Play and F-Droid. Distribution, installation, and
+  the optional purchase of the Key App are handled entirely by those platforms under their own
+  respective privacy policies and terms. The app embeds no analytics, advertising, billing, or
+  tracking SDK of any kind, and it has no internet access with which to reach one.</p>
+  <p>For completeness, the app is built on standard open-source Android libraries, which collect
+  nothing and send nothing. There is one further component, and only in the Google Play version:
+  Google's in-app review library, which is what lets the app show Google's own "rate this app"
+  dialog. It is used at most once, it is optional for you, and it works by asking the Google Play
+  app already on your device to display that dialog. It gives this app no network access, sends
+  the developer nothing, and is absent entirely from the F-Droid version. A list of every component
+  and its licence is available inside the app.</p>
 
   <h2>Data security</h2>
-  <p>Because the app collects no data and has no network access, there is no data-in-transit
-  and no server-side storage to secure. The only information described above lives in your
-  device's private, sandboxed app storage, protected by Android's own operating-system-level
-  security model, and is never exposed to the developer.</p>
+  <p>The app has no servers, no network access, and stores no personal data, so there is no
+  personal data of yours in the developer's hands to secure or to breach. Local on-device
+  settings are protected by Android's operating-system-level app sandboxing and are never
+  exposed to the developer.</p>
 
   <h2>Your rights (GDPR, CCPA, and similar privacy laws)</h2>
   <p>If you are located in the European Economic Area, the United Kingdom, California, or any
   other jurisdiction with its own data protection law, you may have rights such as the right to
   access, correct, delete, or export personal data, and the right to object to its processing.
-  Because Granular Volume does not collect, store, or process any personal data about you, there
-  is no personal data held by the developer for any such request to act upon. If you believe this
-  is inaccurate, or have any question about how these rights apply to your use of the app,
-  contact the developer using the details below.</p>
+  The developer holds no personal data about you, so there is nothing to access, correct,
+  delete, or export on our side. For data generated by a Google Play purchase of the Key App,
+  those rights are exercised against Google as the party that actually holds that data, using
+  Google's own account and privacy tools. You also have the right to lodge a complaint with
+  your local supervisory authority. Contact the developer using the details below with any
+  question about how this applies to you.</p>
 
   <h2>Children's privacy</h2>
-  <p>The app collects no data from anyone, including children, and contains no ads. The app is a
-  general-purpose utility not directed at children specifically. Parents and guardians who allow
-  a child to use the app can do so with the same assurance given above: no information about the
-  child, or anyone else, is ever collected, stored, or transmitted.</p>
+  <p>The app collects no personal data from anyone, including children, and contains no ads.
+  The optional Key App purchase is made on Google Play using the payment method of the Google
+  account making the purchase; it is not directed at children, and parents or guardians are
+  responsible for supervising purchases made from a device or account a child can access,
+  using Google Play's own family and purchase-approval controls. The F-Droid version has no
+  purchase feature at all.</p>
 
   <h2>International use</h2>
-  <p>The app may be downloaded and used anywhere Google Play or F-Droid is available. Because no
-  personal data is ever collected, no personal data is transferred across borders in connection
-  with the app's operation.</p>
+  <p>The app may be downloaded and used anywhere Google Play or F-Droid is available. Because
+  the app itself transmits nothing, no personal data is transferred across borders in
+  connection with the app's own operation. Any data involved in a Google Play purchase of the
+  Key App is handled by Google under Google's own policies.</p>
 
   <h2>Disclaimer of warranty; limitation of liability</h2>
   <p>The app is provided "as is" and "as available," without warranty of any kind, express or
-  implied, to the fullest extent permitted by applicable law. The developer does not warrant that
-  the app will be uninterrupted, error-free, or compatible with every device or Android version.
-  To the fullest extent permitted by applicable law, the developer's total liability arising out
-  of or relating to your use of the app shall not exceed the amount you paid, if any, for the app
-  or any optional in-app purchase. Nothing in this section limits any liability that cannot be
-  limited or excluded under applicable law.</p>
+  implied, to the fullest extent permitted by applicable law. The developer does not warrant
+  that the app will be uninterrupted, error-free, or compatible with every device or Android
+  version. To the fullest extent permitted by applicable law, the developer's total liability
+  arising out of or relating to your use of the app, including the optional Key App purchase,
+  shall not exceed the amount you actually paid for that purchase. Nothing in this section
+  limits any liability that cannot be limited or excluded under applicable law, including your
+  statutory consumer rights in relation to the purchase.</p>
 
   <h2>Governing law</h2>
   <p>This policy and any dispute arising from or relating to it or to your use of the app are
-  governed by the laws of the State of Israel, without regard to its conflict-of-laws principles,
-  and subject to the exclusive jurisdiction of the competent courts of Tel Aviv-Jaffa, Israel,
-  except where applicable local consumer-protection law grants you the right to bring a claim in
-  your own jurisdiction instead.</p>
+  governed by the laws of the State of Israel, without regard to its conflict-of-laws
+  principles, and subject to the exclusive jurisdiction of the competent courts of Tel
+  Aviv-Jaffa, Israel, except where applicable local consumer-protection law grants you the
+  right to bring a claim in your own jurisdiction instead, or where a claim relates
+  specifically to Google's own handling of a purchase, which is governed by Google's own
+  terms.</p>
 
   <h2>Changes to this policy</h2>
   <p>If this policy changes, the updated version will be posted at this same address with a
-  revised "Last updated" date. Material changes, such as the introduction of any new data
-  collection or a paid feature, will be reflected here before or at the same time as the change
-  takes effect in the app.</p>
+  revised "Last updated" date.</p>
 
   <h2>Contact</h2>
-  <p>Questions about this policy, or any privacy-related request? Contact the developer at:
-  <a href="mailto:rotemzus@gmail.com">rotemzus@gmail.com</a>.</p>
+  <p>Questions about this policy, a refund request, or any privacy-related request? Contact
+  the developer at: <a href="mailto:rotemzus@gmail.com">rotemzus@gmail.com</a>.</p>
 </body>
 </html>
