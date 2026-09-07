@@ -14,9 +14,18 @@
   h2 { margin-top: 1.8em; font-size: 1.2rem; }
   .muted { color: #6b7280; font-size: .95rem; }
   code { background: rgba(108,99,255,.12); padding: 1px 6px; border-radius: 5px; }
+
+  /* Keyboard accessibility and reduced motion. Structure only; the legal text is unchanged. */
+  .skip-link{position:absolute;left:-9999px;top:0;z-index:999;padding:12px 20px;background:#22d3ee;color:#0a0e1d;font-weight:700;text-decoration:none;border-radius:0 0 10px 0;}
+  .skip-link:focus{left:0;}
+  :focus-visible{outline:3px solid #22d3ee;outline-offset:3px;border-radius:4px;}
+  main:focus{outline:none;}
+  @media (prefers-reduced-motion: reduce){html{scroll-behavior:auto;} *,*::before,*::after{transition:none !important;animation:none !important;}}
 </style>
 </head>
 <body>
+<a class="skip-link" href="#main">Skip to the main content<main id="main" tabindex="-1">
+</a>
   <h1>Privacy Policy for Volume Control Full Range Key</h1>
   <p class="muted">Last updated: August 26, 2026</p>
 
@@ -77,5 +86,8 @@
 
   <h2>Contact</h2>
   <p><a href="mailto:rotemzus@gmail.com">rotemzus@gmail.com</a></p>
+
+<p class="a11y-note" style="margin-top:28px;font-size:14px;opacity:.85">Accessibility of this page and of granularvolume.com is described in the <a href="https://granularvolume.com/accessibility.html">accessibility statement</a>.</p>
+</main>
 </body>
 </html>
