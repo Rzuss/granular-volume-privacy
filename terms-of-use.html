@@ -13,11 +13,12 @@
   h1 { font-size: 2rem; margin-bottom: .2em; }
   h2 { margin-top: 1.8em; font-size: 1.25rem; }
   .muted { color: #6b7280; font-size: .95rem; }
-  .gv-notice { border: 1px solid #c9c4ff; background: #f5f4ff; border-radius: 10px;
+  .gv-glance { border: 1px solid #c9c4ff; background: #f5f4ff; border-radius: 10px;
                padding: 4px 18px 6px; margin: 22px 0 28px; }
-  .gv-notice p { margin: 12px 0; }
+  .gv-glance h2 { margin-top: .8em; }
+  .gv-glance p, .gv-glance li { margin: 8px 0; }
   @media (prefers-color-scheme: dark) {
-    .gv-notice { border-color:#3b3670; background:#1b1930; }
+    .gv-glance { border-color:#3b3670; background:#1b1930; }
   }
 
   /* Keyboard accessibility and reduced motion. Structure only; the legal text is unchanged. */
@@ -32,40 +33,50 @@
 <a class="skip-link" href="#main">Skip to the main content</a>
 <main id="main" tabindex="-1">
   <h1>Terms of Use for Granular Volume</h1>
-  <p class="muted">Last updated: September 12, 2026</p>
+  <p class="muted">Last updated: September 23, 2026</p>
 
-  <div class="gv-notice" role="note">
-    <p><strong>What applies to the app you can install today.</strong></p>
-    <p>The version of Granular Volume currently on Google Play is <strong>free to use, with no
-    trial period and no payment of any kind</strong>. Nothing in these Terms asks you to pay for
-    it.</p>
-    <p>Section 5 below describes a free trial and an optional one-time unlock. <strong>That section
-    takes effect with version 1.5.0, which has not been released yet.</strong> It is published here
-    in advance so it can be read before it ever applies to anyone.</p>
-    <p>If you install the app before version 1.5.0 arrives, <strong>you keep the complete app, every
-    step of it, free and permanently.</strong> The trial and the unlock will apply only to
-    installations made after that version is published.</p>
-  </div>
+  <section class="gv-glance" aria-labelledby="glance">
+    <h2 id="glance">These Terms at a glance</h2>
+    <p>This summary makes the Terms quicker to read. It does not replace them: if anything here seems to
+    differ from the numbered sections below, the numbered sections apply.</p>
+    <ul style="padding-left:1.3em">
+      <li><strong>What the app is.</strong> A volume utility with quieter steps below your device's built-in
+          minimum. It is not a medical device and not hearing protection (Section 2).</li>
+      <li><strong>Alarms and alerts.</strong> The app can lower ringtones, notifications and alarms, down to a level you may not hear, and its mute button silences media. If it was on when the device shut down, it comes back after a restart.
+          Do not rely on it for alerts that matter (Section 2).</li>
+      <li><strong>Free trial.</strong> A new installation from Google Play includes seven days of the complete
+          app, counted from installation (Section 5).</li>
+      <li><strong>After the trial.</strong> The volume control needs the Volume Control Full Range Key, a
+          one-time purchase on Google Play at the price shown there. Without it the dial locks and sound returns to your device's own volume. No subscription, and nothing renews (Section 5).</li>
+      <li><strong>Long-time users and F-Droid.</strong> Installations from Google Play made before version 1.5.0 keep the complete app free, permanently. The F-Droid version is complete and free, permanently (Section 5).</li>
+      <li><strong>Refunds.</strong> Through Google Play, or by email to the developer. A consumer in Israel may
+          cancel within 14 days (Section 5).</li>
+      <li><strong>Your rights.</strong> Nothing in these Terms reduces your statutory rights as a consumer
+          (Sections 8, 9 and 17).</li>
+      <li><strong>Who we are.</strong> Rotem Zussman, an independent developer in Israel,
+          <a href="mailto:rotemzus@gmail.com">rotemzus@gmail.com</a> (Section 23).</li>
+    </ul>
+  </section>
 
   <p>These Terms of Use ("Terms") govern your use of the <strong>Granular Volume</strong>
   mobile application ("the app"), developed and published by an independent developer
-  (Rotem Zussman, "the developer"), and of the optional companion application
-  <strong>Volume Control Full Range Key</strong> ("the Key App") described in Section 5.
-  By installing or using the app or the Key App, you agree to these Terms. If you do not
-  agree, do not install or use them. The app additionally asks you to actively accept these
-  Terms on a consent screen before it first runs, and the purchase screen for the optional
-  unlock states again, at the moment of purchase, that buying constitutes agreement. Either
-  form of acceptance is sufficient; together they are the record that you agreed.</p>
+  (Rotem Zussman, "the developer"). They also govern the optional companion application
+  <strong>Volume Control Full Range Key</strong> ("the Key App") described in Section 5.</p>
+  <p>By installing or using the app or the Key App, you agree to these Terms. If you do not
+  agree, do not install or use them. The app also asks you to actively accept these Terms on a
+  consent screen before it first runs. The app's upgrade screen, which leads to the purchase, states again that upgrading means agreeing to these Terms. Either form of acceptance is
+  sufficient; together they are the record that you agreed.</p>
 
   <h2>1. What the app does</h2>
   <p>The app is a software utility that provides fine-grained, software-level control of your
   Android device's volume, including steps below the device's built-in minimum volume,
   through a small floating on-screen control. It processes your device's audio output
-  locally, on the device. It is a convenience utility only.</p>
-  <p>The audible effect of the app depends on your device. Android devices differ in how
-  they route and process audio; on some devices certain sound types (for example, regular cellular call audio on every phone, call audio from apps on some phones, or system interface sounds on all phones) are handled in
-  hardware or in audio paths that no application of this kind can reach. The app applies its
-  attenuation to the device's standard mixed audio output; it does not and cannot guarantee
+  locally, on the device.</p>
+  <p>The audible effect of the app depends on your device. Android devices differ in how they
+  route and process audio. Some sound types are handled in hardware or in audio paths that no
+  application of this kind can reach: for example, regular cellular call audio on every phone,
+  call audio from apps on some phones, and system interface sounds on all phones. The app applies
+  its attenuation to the device's standard mixed audio output. It does not and cannot guarantee
   an identical audible result on every device, audio route, or sound type.</p>
 
   <h2>2. Not a medical device or safety equipment</h2>
@@ -83,14 +94,13 @@
   THE LAW OF YOUR COUNTRY OF RESIDENCE, INCLUDING LIABILITY FOR DEATH OR PERSONAL INJURY CAUSED
   BY NEGLIGENCE WHERE SUCH A LIMITATION IS NOT PERMITTED.</strong></p>
 
-  <p>The app can lower, and at your request silence, sounds you may be relying on to alert
-  you, including ringtones, notifications and alarms. If the control was
-  active when your device shut down, it resumes at the same level after a restart. Do not
-  rely on a device running the app as your sole means of receiving time-critical or
-  safety-critical alerts, such as waking up for an obligation, incoming emergency calls, or
-  medical or caregiving alerts. To the maximum extent permitted by applicable law, the
-  developer is not liable for any loss or harm arising from a sound you did not hear, or
-  heard at reduced volume, while the app was active.</p>
+  <p>The app can lower sounds you may be relying on to alert you, including ringtones, notifications and alarms, down to a level you may not hear, and its mute button silences media entirely. If the control was active when your
+  device shut down, it resumes at the same level after a restart. Do not rely on a device
+  running the app as your sole means of receiving time-critical or safety-critical alerts, such
+  as waking up for an obligation, incoming emergency calls, or medical or caregiving alerts. To
+  the maximum extent permitted by applicable law, the developer is not liable for any loss or
+  harm arising from a sound you did not hear, or heard at reduced volume, while the app was
+  active.</p>
 
   <h2>3. License</h2>
   <p>The app's source code is free software, licensed under the GNU General Public License
@@ -106,9 +116,9 @@
   freedom: redistributing the Key App itself, and presenting a modified build as an official
   release of the developer.</p>
   <p>The apps also include third-party open-source components, each governed by its own licence.
-  Those licences continue to apply to those components, and the developer gives no warranty in
+  Those licences continue to apply to those components. The developer gives no warranty in
   respect of them beyond what this document states about the apps as a whole. A list of the
-  components and their licences is available inside the app.</p>
+  components and their licences is available inside the app from version 1.5.0.</p>
 
   <h2>4. Trademarks and branding</h2>
   <p>The apps' names, logos, and store presence identify the developer's own builds. The
@@ -119,18 +129,18 @@
   <h2>5. The free trial and the full-range unlock (Google Play version only)</h2>
   <p>The Google Play version of the app is free to download and comes with a free trial of the
   complete app. When the trial ends, continuing to use the app's volume control requires a
-  one-time purchase, described below. Installations made before this changed are not affected; see "Long-time users" below.</p>
+  one-time purchase, described below. Installations made before this changed are not affected;
+  see "Long-time users" below.</p>
   <ul style="padding-left:1.3em">
     <li><strong>The free trial.</strong> A new installation includes seven days of the complete
         app, with every feature available and nothing withheld. The seven days run from when
-        the app is first installed on the device, whether or not you open it, and the app shows
+        the app is first installed on the device, whether or not you open it. The app shows
         you how much time is left as the end approaches.</li>
-    <li><strong>What happens when the trial ends.</strong> The volume control stops applying
-        changes until the unlock described below is installed. The app itself keeps working,
-        remains installed, and takes nothing away from your device: your device's own volume
+    <li><strong>What happens when the trial ends.</strong> The volume control stops applying changes until the unlock described below is installed. From the next time the control starts, it applies no attenuation, so any quiet level you were using is released and sound returns to your device's own volume. The app itself keeps working,
+        remains installed, and takes nothing away from your device. Your device's own volume
         controls are unaffected at all times, both during the trial and after it. If you decide
-        the app is not for you, uninstalling it is enough, and there is nothing to cancel,
-        because nothing was ever charged and nothing renews.</li>
+        the app is not for you, uninstalling it is enough. There is nothing to cancel, because
+        nothing was ever charged and nothing renews.</li>
     <li><strong>One trial per device.</strong> The trial is intended to be taken once. So that
         it survives a new phone or a reinstall rather than being lost, the app records when
         your trial began in a small file that takes part in Android's own backup to your Google
@@ -138,10 +148,12 @@
         access of a long-time user to a new device. It contains no personal information, and
         the developer neither receives nor stores it.</li>
     <li><strong>What you buy.</strong> The unlock is a separate companion application, Volume
-        Control Full Range Key, sold on its own Google Play listing at the price displayed
-        there in your local currency before you confirm the purchase. Installing the Key App on your device is what keeps the app's volume control working after the trial: the normal range, the deeper steps and mute. The Key App's own function
-        is to serve as this unlock and to display its status; it has no other features, and it
-        requires the app to be useful.</li>
+        Control Full Range Key. It is sold on its own Google Play listing, at the price displayed
+        there in your local currency before you confirm the purchase. Installing the Key App on
+        your device is what keeps the app's volume control working after the trial: the normal
+        range, the deeper steps and mute. The Key App's own function is to serve as this unlock
+        and to display its status. It has no other features, and it requires the app to be
+        useful.</li>
     <li><strong>One-time, not a subscription.</strong> The purchase is a standard Google Play
         paid-app purchase. There is no recurring charge, no subscription, and nothing to
         cancel.</li>
@@ -156,38 +168,57 @@
         Google account that bought it. Google Play recognizes the previous purchase and will
         not charge again. No account with the developer, no code, and no internet access in the
         app are involved.</li>
-    <li><strong>If the Key App is removed.</strong> Uninstalling the Key App, or a refund of
-        its purchase, returns that device to the state it was in after the trial ended, unless
-        the trial is still running or the device qualifies as a long-time user. Any quiet level
-        that was in use is then released the next time the control starts.</li>
-    <li><strong>Device dependence.</strong> The unlock keeps the volume control working as described, including the additional attenuation steps. As stated in Sections 1 and 2, the audible effect of any step
-        depends on your device's audio hardware and software; the developer does not warrant a
-        specific audible outcome on a specific device, audio route, or sound type.</li>
+    <li><strong>If the Key App is removed.</strong> Uninstalling the Key App, including when Google Play removes it after a refund, returns that device to the state it was in after the trial ended. That
+        does not apply while the trial is still running, or if the device qualifies as a
+        long-time user. Any quiet level that was in use is then released the next time the
+        control starts.</li>
+    <li><strong>Device dependence.</strong> The unlock keeps the volume control working as
+        described, including the additional attenuation steps. As stated in Sections 1 and 2,
+        the audible effect of any step depends on your device's audio hardware and software.
+        The developer does not warrant a specific audible outcome on a specific device, audio
+        route, or sound type.</li>
     <li><strong>If the Key App stops being offered.</strong> The developer may stop offering the
         Key App for sale at any time. If that happens, a purchase already made remains valid on
         the devices where it is installed, and Google Play's own record of your purchase is what
-        allows you to install it again; the developer does not operate any separate licence
+        allows you to install it again. The developer does not operate any separate licence
         service and cannot restore a purchase independently of Google Play.</li>
     <li><strong>If something does not work.</strong> If a feature you paid for does not behave as
         described, please contact the developer first and allow a reasonable period to investigate
         and fix it. Most problems of this kind are configuration or device-routing issues that can
         be resolved quickly. This is a request for the chance to put things right, not a condition
-        on your rights: it does not limit any statutory remedy you have, and it does not affect your
+        on your rights. It does not limit any statutory remedy you have, and it does not affect your
         ability to seek a refund at any time.</li>
-    <li><strong>Refunds.</strong> You may request a refund through Google Play's standard
+    <li id="refunds"><strong>Refunds.</strong> You may request a refund through Google Play's standard
         refund process, or by contacting the developer directly at the email address below.
         Statutory rights you have under the consumer-protection law of your country of
-        residence, including any right of withdrawal, are not affected by these Terms. If you are a consumer in Israel, you may cancel the purchase within 14 days of buying it, by email to the address below or through Google Play. The full price is refunded within 14 days of your cancellation notice, with no cancellation fee. When
-        contacting the developer about a purchase, please include the Google Play order number
-        from your emailed receipt, since that is the only way a specific purchase can be
-        identified.</li>
-    <li><strong>Long-time users.</strong> Any installation of the app from Google Play made before version 1.5.0 was published there keeps the complete app at no charge, permanently, whether or not it was ever opened, and is never placed on a trial. The grant is recorded on the device the first time version 1.5.0 or later runs there, and from then on it travels with the backup described above when Android restores that device's data. It is not a purchased right. It covers every installation made before version 1.5.0 was published, and does not oblige the developer to extend it to installations made after that. If you installed the app before version 1.5.0 was published and the grant does not reach a new or reset device, for example because Android backup was switched off or because the old device never ran version 1.5.0, write to the developer at the address below and you will receive the full range at no charge. No proof beyond your own statement is asked for.</li>
+        residence, including any right of withdrawal, are not affected by these Terms.
+        If you are a consumer in Israel, you may cancel the purchase within 14 days of buying it
+        or, if later, of receiving these details in writing. You can cancel by email to the address
+        below or through Google Play. The full price is refunded within 14 days of your cancellation
+        notice, with no cancellation fee. When contacting the developer about a purchase, please
+        include the Google Play order number from your emailed receipt, since that is the only way
+        a specific purchase can be identified.</li>
+    <li><strong>Long-time users.</strong> Any installation of the app from Google Play made before
+        version 1.5.0 was published there keeps the complete app at no charge, permanently, whether
+        or not it was ever opened, and is never placed on a trial. The grant is recorded on the
+        device the first time version 1.5.0 or later runs there. From then on it travels with the
+        backup described above when Android restores that device's data. It is not a purchased
+        right. It covers every installation made before version 1.5.0 was published, and does not
+        oblige the developer to extend it to installations made after that. If you installed the app
+        before version 1.5.0 was published and the grant does not reach a device, whether a new or
+        reset one or the same one after a reinstall, write to the developer at the address below
+        and you will receive the full range at no charge. This can happen, for example, because
+        Android backup was switched off or because the old device never ran version 1.5.0. No proof
+        beyond your own statement is asked for.</li>
     <li><strong>F-Droid.</strong> The version of the app distributed on F-Droid contains the
         full range and no purchase feature; all functionality is included at no charge in that
         version, permanently.</li>
   </ul>
 
-  <h2>6. Purchases by minors</h2>
+  <h2>6. Age, and purchases by minors</h2>
+  <p>By using the apps you confirm that you are of an age at which you can lawfully agree to these
+  Terms in your country of residence, or that a parent or legal guardian has agreed on your
+  behalf.</p>
   <p>To buy the Key App you must be old enough to form a binding contract in your country of
   residence, or have the consent of a parent or legal guardian who accepts these Terms on your
   behalf. Parents and guardians are responsible for supervising purchases made through a
@@ -195,11 +226,8 @@
   Play's family and purchase-approval controls.</p>
 
   <h2>7. Acceptable use</h2>
-  <p>You agree not to use the app in any unlawful way, and not to misrepresent modified or
+  <p>You agree not to use the apps in any unlawful way, and not to misrepresent modified or
   redistributed builds of the app as official releases of the developer.</p>
-  <p>By using the apps you confirm that you are of an age at which you can lawfully agree to these
-  Terms in your country of residence, or that a parent or legal guardian has agreed on your behalf,
-  and that you will use the apps lawfully.</p>
 
   <h2>8. Disclaimer of warranty</h2>
   <p><strong>THE APP AND THE KEY APP ARE PROVIDED "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY
@@ -224,17 +252,18 @@
   <p>The developer has no obligation to provide ongoing technical support, maintenance, bug
   fixes, or future updates for the app or the Key App, whether or not you purchased the
   optional unlock. The developer may update, change, or discontinue the app or any feature at
-  any time; features already unlocked by a purchase will not be withdrawn from that purchase
-  on that device by a later update, except as required by law or by changes outside the
-  developer's control (such as changes to Android itself or to Google Play).
-  If these Terms change, the updated version will be posted at this address with a revised
+  any time. A later update will not withdraw features already unlocked by a purchase from that
+  purchase on that device. The only exceptions are changes required by law or outside the
+  developer's control, such as changes to Android itself or to Google Play.</p>
+  <p>If these Terms change, the updated version will be posted at this address with a revised
   "Last updated" date. Material changes will be reflected here before or at the same time as
-  they take effect. This section does not affect any statutory obligation the
-  developer may have to supply updates necessary to keep purchased digital content in
-  conformity.</p>
+  they take effect. This section does not affect any statutory obligation the developer may
+  have to supply updates necessary to keep purchased digital content in conformity.</p>
 
   <h2>11. Indemnification</h2>
-  <p>You agree to indemnify the developer against third-party claims, and the reasonable costs of defending them, to the extent they arise from your violation of these Terms, of the law, or of a third party's rights.</p>
+  <p>You agree to indemnify the developer against third-party claims, and the reasonable costs of
+  defending them, to the extent they arise from your violation of these Terms, of the law, or of a
+  third party's rights.</p>
 
   <h2>12. Termination, and what it does and does not mean</h2>
   <p>These Terms apply for as long as you use the app. You may end them at any time by
@@ -250,11 +279,11 @@
   Google Play. Those platforms have their own terms, which apply to you separately from these
   Terms and which the developer does not control. Where a platform's terms govern the purchase
   transaction itself, they take precedence over these Terms in respect of that transaction.</p>
-  <p>Who your purchase contract is with depends on where you are: under Google Play's own terms,
-  in some countries Google is the merchant of record for the sale and in others the developer
+  <p>Who your purchase contract is with depends on where you are. Under Google Play's own terms,
+  in some countries Google is the merchant of record for the sale, and in others the developer
   is, with Google acting as the developer's agent. This does not change your rights under these
-  Terms or your statutory rights, and in either case the developer remains your point of
-  contact for support and refunds, and Google remains the processor of the payment itself.</p>
+  Terms or your statutory rights. In either case the developer remains your point of contact for
+  support and refunds, and Google remains the processor of the payment itself.</p>
   <p>Google and F-Droid are not parties to these Terms. They have no obligation to provide support,
   maintenance or any warranty for the apps under these Terms, and any support or refund
   responsibility described here is the developer's, not theirs. Nothing in this section limits any
@@ -273,20 +302,19 @@
   you will be told through the app's store listing or this page.</p>
 
   <h2>16. Where you may use the apps</h2>
-  <p>You may not use or obtain the apps in breach of applicable export control or sanctions laws,
-  and you confirm that you are not located in, or acting on behalf of anyone in, a country or on a
+  <p>You may not use or obtain the apps in breach of applicable export control or sanctions laws.
+  You confirm that you are not located in, or acting on behalf of anyone in, a country or on a
   list to which such laws would prohibit supply.</p>
 
   <h2>17. Severability</h2>
   <p>If any provision of these Terms is found to be unenforceable or invalid under any
-  applicable law, that unenforceability or invalidity will not render the rest of these Terms
-  unenforceable or invalid. The affected provision will be limited or eliminated to the
-  minimum extent necessary, and the remaining provisions will continue in full force and
-  effect. This applies in particular to Section 2, where consumer-protection law in some
-  countries does not permit a limitation of liability for personal injury caused by
-  negligence: if that specific limitation is found unenforceable where you live, it is removed
-  to that extent only, and the rest of these Terms, including the rest of Section 2, remains
-  in effect.</p>
+  applicable law, the rest of these Terms remains enforceable and valid. The affected provision
+  will be limited or eliminated to the minimum extent necessary, and the remaining provisions
+  will continue in full force and effect.</p>
+  <p>This applies in particular to Section 2. Consumer-protection law in some countries does not
+  permit a limitation of liability for personal injury caused by negligence. If that specific
+  limitation is found unenforceable where you live, it is removed to that extent only. The rest
+  of these Terms, including the rest of Section 2, remains in effect.</p>
 
   <h2>18. No waiver</h2>
   <p>If the developer does not enforce a right under these Terms on some occasion, that is not a
@@ -305,21 +333,23 @@
   extent permitted by the law that applies to you.</p>
 
   <h2>21. Entire agreement</h2>
-  <p>These Terms, together with the Privacy Policy, constitute the entire agreement between
-  you and the developer relating to your use of the app and the Key App, and supersede all
-  prior or contemporaneous communications and proposals about them, whether oral or written,
-  including anything stated in marketing materials, community posts, or direct
-  correspondence. This section does not exclude liability for fraudulent
-  misrepresentation, and does not affect any statement that applicable consumer law makes
-  binding on the developer.</p>
+  <p>These Terms, together with the Privacy Policy, are the entire agreement between you and the
+  developer about the app and the Key App. They supersede all earlier or simultaneous
+  communications and proposals about them, oral or written, including marketing materials,
+  community posts and direct correspondence. This section does not exclude liability for
+  fraudulent misrepresentation. It does not affect any statement that applicable consumer law
+  makes binding on the developer.</p>
 
   <h2>22. Governing law and jurisdiction</h2>
   <p>These Terms, and any dispute arising from or relating to them or to your use of the app,
   are governed by the laws of the State of Israel, without regard to its conflict-of-laws
-  principles, and subject to the jurisdiction of the competent courts of Israel, including, for a consumer in Israel, any court that has jurisdiction where the consumer lives, except where the mandatory consumer-protection law of your country of
-  residence grants you the right to bring proceedings, or to rely on local law, in your own
-  jurisdiction, and except that any claim relating to Google's own handling of a purchase is
-  governed by Google's own terms. Before filing a claim, we ask that you first contact the developer at the email below and allow a reasonable opportunity to resolve the issue informally. This is a request, not a condition on your right to bring proceedings.</p>
+  principles. Disputes are subject to the jurisdiction of the competent courts of Israel. For a
+  consumer in Israel, that includes any court that has jurisdiction where the consumer lives.</p>
+  <p>Two exceptions apply. First, you keep the protection of the mandatory consumer-protection law of the country where you live, including any right it gives you to bring proceedings there. Second, any claim relating to Google's own handling of a
+  purchase is governed by Google's own terms.</p>
+  <p>Before filing a claim, we ask that you first contact the developer at the email below and
+  allow a reasonable opportunity to resolve the issue informally. This is a request, not a
+  condition on your right to bring proceedings.</p>
 
   <h2>23. Contact</h2>
   <p>Questions about these Terms, refund requests, or any other inquiry:

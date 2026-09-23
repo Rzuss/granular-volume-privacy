@@ -13,12 +13,6 @@
   h1 { font-size: 2rem; margin-bottom: .2em; }
   h2 { margin-top: 1.8em; font-size: 1.25rem; }
   .muted { color: #6b7280; font-size: .95rem; }
-  .gv-notice { border: 1px solid #c9c4ff; background: #f5f4ff; border-radius: 10px;
-               padding: 4px 18px 6px; margin: 22px 0 28px; }
-  .gv-notice p { margin: 12px 0; }
-  @media (prefers-color-scheme: dark) {
-    .gv-notice { border-color:#3b3670; background:#1b1930; }
-  }
   code { background: rgba(108,99,255,.12); padding: 1px 6px; border-radius: 5px; }
   ul { padding-left: 1.3em; }
 
@@ -34,17 +28,9 @@
 <a class="skip-link" href="#main">Skip to the main content</a>
 <main id="main" tabindex="-1">
   <h1>Privacy Policy for Granular Volume</h1>
-  <p class="muted">Last updated: September 11, 2026</p>
+  <p class="muted">Last updated: September 23, 2026</p>
 
-  <div class="gv-notice" role="note">
-    <p><strong>The trial and the unlock mentioned below are not in effect yet.</strong> The version
-    of Granular Volume currently on Google Play is free to use, with no trial and no payment. Those
-    parts describe version 1.5.0, which has not been released. Anyone who installs before it keeps
-    the complete app free permanently. Nothing about how the app handles your data depends on
-    which of the two applies: it has no internet permission either way.</p>
-  </div>
-
-  <p><strong>Granular Volume</strong> ("the app") is a utility developed by an independent
+    <p><strong>Granular Volume</strong> ("the app") is a utility developed by an independent
   developer (Rotem Zussman, "the developer", "we") that adds fine-grained, software-level
   volume control on top of your Android device's built-in volume controls. This policy
   explains, in plain language, what the app does and does not do with information, and what
@@ -61,12 +47,11 @@
   on Google Play's own store listing for the Key App, not inside this app, so this app never
   gains network access and never touches a payment.</p>
 
-  <h2>Information we collect</h2>
+  <h2>Information the app collects</h2>
   <p><strong>None.</strong> The app's own code does not collect, and has no technical means of
   collecting or transmitting, names, email addresses, location, contacts, device identifiers,
   usage statistics, crash logs, payment details, or any other personal or sensitive
-  information. It has no servers and no network capability of its own. We do not use cookies,
-  analytics, advertising, or any tracking technology.</p>
+  information. It has no servers and no network capability of its own. The app uses no cookies, analytics, advertising or tracking technology. The website's visit counter, and the emails and purchase records the developer keeps, are described in their own sections below.</p>
 
   <h2>Information stored on your device</h2>
   <p>The app saves a small amount of <em>local settings</em> on your device only, so it can
@@ -85,10 +70,7 @@
 
   <p>One small part of it takes part in Android's own backup, and we want to be exact about
   which part. Android can copy an app's data into your Google account so that it comes back on
-  a new phone or after a reinstall. We have limited that copy to a single file, which holds
-  only three things: when your free trial began, a timestamp the app keeps so that record
-  cannot be stretched by turning the device clock back, and whether this device qualifies for
-  the free full range as a long-time user. Your settings, the position of the control, your volume level and every
+  a new phone or after a reinstall. We have limited that copy to a single file, which holds only four small values: when your free trial began, a timestamp the app keeps so that record cannot be stretched by turning the device clock back, whether this device qualifies for the free full range as a long-time user, and a flag recording that this check has already been made. Your settings, the position of the control, your volume level and every
   other preference are excluded from the backup and stay on the device they were made on.</p>
 
   <p>That one file is what lets your trial, and a long-time user's free access, follow you to a
@@ -135,7 +117,7 @@
         cancel. To restore it on a new device or after a reset, install the Key App again from
         Google Play with the same Google account; Google Play remembers the purchase.</li>
     <li>For refunds, you can use Google Play's standard refund process, or contact the developer directly at the email below.</li>
-    <li>When you buy the Key App, Google Play gives the developer a record of the order so that the sale, its taxes and any refund can be handled: an order number, the date, the item, the price and tax, and your country. Where the developer rather than Google is the seller of record, Google also includes your state or region and postal code, which it uses to calculate tax. The record does not include your name, your email address or any payment details. The developer uses it only to account for the sale and to handle refunds, and keeps it for as long as tax and accounting rules require.</li>
+    <li>When you buy the Key App, Google Play gives the developer a record of the order so that the sale, its taxes and any refund can be handled: an order number, the date, the item, the price and tax, and your country. Where the developer rather than Google is the seller of record, Google may also include your state or region and postal code, which it uses to calculate tax. The record does not include your name, your email address or any payment details. The developer uses it only to account for the sale and to handle refunds, and keeps it for as long as tax and accounting rules require, which is the legal basis for keeping it.</li>
   </ul>
   <p>The Key App itself collects nothing, requests no permissions, and has no internet access.
   Its own short privacy policy is published at
@@ -154,7 +136,7 @@
   Google's in-app review library, which is what lets the app show Google's own "rate this app"
   dialog. It is used at most once, it is optional for you, and it works by asking the Google Play
   app already on your device to display that dialog. It gives this app no network access, sends
-  the developer nothing, and is absent entirely from the F-Droid version. A list of every component and its licence is available inside the app.</p>
+  the developer nothing, and is absent entirely from the F-Droid version. A list of every component and its licence is available inside the app from version 1.5.0.</p>
   <p>Android itself, not the app, can send crash and freeze reports to Google if you have chosen in your device settings to share usage and diagnostics data. Google shows these reports to the developer, with technical details such as the device model, the Android version and the error, so that faults can be fixed. The app takes no part in collecting or sending them, and you can turn this sharing off in Android's settings.</p>
 
   <h2>The website</h2>
@@ -176,20 +158,28 @@
   which pages are useful, the same way a shop counts how many people came in. If you would rather not
   be counted at all, a content blocker that blocks gc.zgo.at will do exactly that and the site will
   work normally without it.</p>
+  <p>The accessibility button. If you use the button on the website to change the text size, contrast, link
+  underlining or font, your choices are kept in your browser for the open tab only, so they carry from page to page, and
+  they are cleared when you close the tab. They are never sent anywhere, and the button loads nothing from any other site.</p>
 
   <h2>Data security</h2>
-  <p>The app has no servers and no network access, and it sends the developer nothing. The only personal data in the developer's hands are the emails and purchase records described in this policy, kept in the developer's Google account. Local on-device
+  <p>The app has no servers and no network access, and it sends the developer nothing. The only personal data in the developer's hands are the emails, purchase records and tester addresses described in this policy, kept in the developer's Google account. Local on-device
   settings are protected by Android's operating-system-level app sandboxing and are never
   exposed to the developer.</p>
 
   <h2>When you write to the developer</h2>
-  <p>If you email the developer, your email address and whatever you choose to write are kept in the developer's Gmail account (a Google service, which may store it outside your country) in order to answer you and to keep a record of support and refund requests. They are not used for anything else and are deleted on request, unless they are needed for a legal claim.</p>
+  <p>If you email the developer, your email address and whatever you choose to write are kept in the developer's Gmail account (a Google service, which may store it outside your country) in order to answer you and to keep a record of support and refund requests. They are not used for anything else. The legal basis is the developer's legitimate interest in answering you and keeping a record of support and refund requests. Emails are kept for at most three years after your last message, unless you ask for them to be deleted sooner or they are needed for a legal claim.</p>
+
+  <h2>If you joined a test of the app</h2>
+  <p>If you asked to test a pre-release version, the email address you gave was added to a tester list in the developer's
+  Google Play Console, which Google uses to give that address access to the test. It is used for nothing else, and it is
+  removed on request, or once the test list is no longer needed.</p>
 
   <h2>Your rights (GDPR, CCPA, and similar privacy laws)</h2>
   <p>If you are located in the European Economic Area, the United Kingdom, California, or any
   other jurisdiction with its own data protection law, you may have rights such as the right to
   access, correct, delete, or export personal data, and the right to object to its processing.
-  Apart from the emails and purchase records described in this policy, the developer holds no personal data about you. To ask about them, or to have an email deleted, write to the address below. For the rest of the data generated by a Google Play purchase of the Key App, those rights are exercised against Google as the party that actually holds that data, using
+  Apart from the emails, purchase records and tester addresses described in this policy, the developer holds no personal data about you. To ask about them, or to have an email deleted, write to the address below. For the rest of the data generated by a Google Play purchase of the Key App, those rights are exercised against Google as the party that actually holds that data, using
   Google's own account and privacy tools. You also have the right to lodge a complaint with
   your local supervisory authority. Contact the developer using the details below with any
   question about how this applies to you.</p>
@@ -220,10 +210,7 @@
   <h2>Governing law</h2>
   <p>This policy and any dispute arising from or relating to it or to your use of the app are
   governed by the laws of the State of Israel, without regard to its conflict-of-laws
-  principles, and subject to the jurisdiction of the competent courts of Israel, including, for a consumer in Israel, any court that has jurisdiction where the consumer lives, except where applicable local consumer-protection law grants you the
-  right to bring a claim in your own jurisdiction instead, or where a claim relates
-  specifically to Google's own handling of a purchase, which is governed by Google's own
-  terms.</p>
+  principles, and subject to the jurisdiction of the competent courts of Israel, including, for a consumer in Israel, any court that has jurisdiction where the consumer lives. You keep the protection of the mandatory consumer-protection law of the country where you live, including any right it gives you to bring a claim there. A claim that relates specifically to Google's own handling of a purchase is governed by Google's own terms.</p>
 
   <h2>Changes to this policy</h2>
   <p>If this policy changes, the updated version will be posted at this same address with a
