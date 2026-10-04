@@ -28,7 +28,7 @@
 <a class="skip-link" href="#main">Skip to the main content</a>
 <main id="main" tabindex="-1">
   <h1>Privacy Policy for Granular Volume</h1>
-  <p class="muted">Last updated: September 30, 2026</p>
+  <p class="muted">Last updated: October 15, 2026</p>
 
     <p><strong>Granular Volume</strong> ("the app") is a utility developed by an independent
   developer (Rotem Zussman, "the developer", "we") that adds fine-grained, software-level
@@ -62,13 +62,18 @@
   <ul>
     <li>The on-screen position of the floating control.</li>
     <li>Your last selected volume level.</li>
-    <li>Whether the control was active (used to optionally restart it after a reboot).</li>
+    <li>Whether the control was active, and whether it was still holding a level (used to
+        bring it back after the device restarts or the app is updated).</li>
     <li>Whether you have accepted the current Terms of Use.</li>
     <li>Local flags related to the optional full-range unlock: when the free trial on this
         device began, whether this device qualifies for the free full range as a long-time
         user, whether the unlock has been bought on this Google account (a copy of Google
         Play's own record, version 1.6.0 and later), and which one-time informational screens
-        have already been shown.</li>
+        have already been shown. From version 1.7.0, where the app was first opened after the
+        trial week had already passed, also the time until which the 24 hours given instead
+        last.</li>
+    <li>In the Google Play version, from version 1.7.0: whether the Google Play app on your
+        device has reported a newer version of this app, and when the app last asked it.</li>
   </ul>
   <p>This data is stored privately in the app's own storage on your device and is never
   transmitted to us. We operate no servers and receive none of it.</p>
@@ -156,7 +161,7 @@
   respective privacy policies and terms. The app embeds no analytics, advertising or tracking
   SDK of any kind, and it has no internet access with which to reach one.</p>
   <p>For completeness, the app is built on standard open-source Android libraries, which collect
-  nothing and send nothing. There are two further components, and only in the Google Play version.
+  nothing and send nothing. There are three further components, and only in the Google Play version.
   The first is Google's in-app review library, which is what lets the app show Google's own "rate
   this app" dialog. It is used at most once, it is optional for you, and it works by asking the
   Google Play app already on your device to display that dialog. The second, from version 1.6.0, is
@@ -164,8 +169,12 @@
   Google Play app on the device to show Google's purchase window and to report a purchase. It is
   built into this app without Google's optional usage-reporting part, and the app has no internet
   permission for it to use: everything it does goes through the Google Play app already on your
-  device, under Google's privacy policy. Neither component gives this app network access, neither
-  sends the developer anything, and both are absent entirely from the F-Droid version. A list of every component and its licence is available inside the app from version 1.5.0.</p>
+  device, under Google's privacy policy. The third, from version 1.7.0, is Google's in-app
+  update library, through which the app asks the Google Play app already on your device whether
+  a newer version of this app exists, and opens Google's own update screen when you press Update.
+  The download is done by the Google Play app, not by this app. None of the three gives this app
+  network access, none sends the developer anything, and all three are absent entirely from the
+  F-Droid version. A list of every component and its licence is available inside the app from version 1.5.0.</p>
   <p>Android itself, not the app, can send crash and freeze reports to Google if you have chosen in your device settings to share usage and diagnostics data. Google shows these reports to the developer, with technical details such as the device model, the Android version and the error, so that faults can be fixed. The app takes no part in collecting or sending them, and you can turn this sharing off in Android's settings.</p>
 
   <h2>The website</h2>
